@@ -1,7 +1,7 @@
 # Yapay Zeka Etkileşim Günlüğü (AI Log) 🤖
 
 ## Hafta 1: Proje Fikrinin Bulunması ve Sınırların Çizilmesi
-**Tarih:** 09.10.2026
+**Tarih:** 15.10.2026
 
 * **Amaç:** 14 haftalık geliştirme sürecine uygun, dersin konseptiyle uyuşan ve localStorage kullanarak çözülebilecek orijinal bir problem/fikir bulmak.
 
