@@ -1,0 +1,142 @@
+/* Genel Ayarlar ve Sıfırlama */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f111a; /* Figma tasarımındaki o koyu lacivert/siyah arka plan */
+    color: #ffffff; /* Yazıların beyaz olması için */
+}
+
+/* Ana Taşıyıcı: Sayfayı ikiye bölecek Flexbox yapısı */
+.container {
+    display: flex;
+    min-height: 100vh; /* Ekranın tüm yüksekliğini kaplamasını sağlar */
+}
+
+/* Sol Menü (Sidebar) Ayarları */
+.sidebar {
+    width: 250px;
+    background-color: #07080d; /* Menünün biraz daha koyu olması için */
+    padding: 30px 20px;
+    border-right: 1px solid #2a2e40; /* Sağ tarafına ince bir çizgi */
+}
+
+.sidebar h2 {
+    font-size: 22px;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.sidebar ul {
+    list-style-type: none; /* Liste noktalarını kaldırır */
+}
+
+.sidebar li {
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Menü elemanlarının üzerine gelince oluşacak efekt */
+.sidebar li:hover {
+    background-color: #2a2e40; 
+}
+
+/* Sağ İçerik Alanı Ayarları */
+.content {
+    flex: 1; /* Menüden arta kalan tüm boşluğu doldurur */
+    padding: 40px 60px;
+}
+
+.content h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #132576;
+}
+
+
+/* Form Alanı Tasarımı */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Kutular arası boşluk */
+    max-width: 800px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    color: #a0a4b8;
+    font-size: 14px;
+}
+
+/* Metin Kutuları */
+.form-group input, .form-group textarea {
+    background-color: #1a1d2d; /* Tasarımdaki gri kutu rengi */
+    border: 1px solid #2a2e40;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none; /*Tarayıcıların metin kutularına tıklandığında çıkardığı varsayılan çirkin çerçeveyi iptal eder.*/
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #00d2ff; /* Tıklanınca kenarlığın parlaması */
+}
+
+/* Oluştur Butonu */
+.submit-btn {
+    background: linear-gradient(90deg, #00d2ff 0%, #0095ff 100%);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 20px; /* Figma'daki gibi yuvarlak köşeler */
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer; /*Fare imlecinin butonun üzerine geldiğinde normal ok simgesinden tıklanabilir "el" simgesine dönüşmesini sağlar.*/
+    align-self: flex-end; /* Butonu sağa yaslar */
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    opacity: 0.8; /*"Şablonu Oluştur Ve Kopyala" butonunun üzerine geldiğinde butonun hafifçe soluklaşmasını (şeffaflaşmasını) sağlıyor.*/
+}
+/* Sağ Menü (Geçmiş) Ayarları */
+.right-sidebar {
+    width: 280px;
+    background-color: #07080d;
+    padding: 30px 20px;
+    border-left: 1px solid #2a2e40; /* Orta alanla arasına çizgi çeker */
+}
+
+.right-sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    border-bottom: 1px solid #2a2e40;
+    padding-bottom: 10px;
+}
+
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.empty-text {
+    color: #a0a4b8;
+    font-size: 13px;
+    font-style: italic;
+}

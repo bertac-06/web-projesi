@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromptArch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    <!-- Sol Menü -->
+    <aside class="sidebar"> 
+        <h2>PromptArch</h2>
+        <nav>
+            <ul>
+                <li>Ana Sayfa</li>
+                <li>Şablonlar</li>
+                <li>Ayarlar</li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Sağ İçerik Alanı -->
+    <main class="content">
+        <h1>Prompt Mimarisi (PromptArch)</h1>
+        <!-- Form alanları buraya gelecek -->
+      
+        <div class="form-container">
+            <div class="form-group">
+                <label>Bağlam (Örn: Ön lisans öğrencisiyim...)</label>
+                <input type="text" id="baglam">
+            </div>
+            
+            <div class="form-group">
+                <label>Amaç (Örn: Görev takip uygulaması yapmak istiyorum...)</label>
+                <input type="text" id="amac">
+            </div>
+            
+            <div class="form-group">
+                <label>Sınırlar (Örn: Backend yok, sadece LocalStorage...)</label>
+                <input type="text" id="sinirlar">
+            </div>
+            
+            <div class="form-group">
+                <label>Beklenen Çıktı (Örn: Bana MVP özellikleri öner...)</label>
+                <textarea id="cikti" rows="4"></textarea>
+            </div>
+            
+            <button id="olusturBtn" class="submit-btn">Şablonu Oluştur Ve Kopyala</button>
+        </div>
+    </main>
+
+    <!-- Sağ Menü (Geçmiş Alanı) -->
+    <aside class="right-sidebar">
+        <h3>Son Oluşturulanlar</h3>
+        <div id="gecmisListe" class="history-list">
+            <!-- LocalStorage ile buraya geçmiş promptlar eklenecek -->
+            <p class="empty-text">Henüz kaydedilmiş bir prompt yok.</p>
+       
+        </div>
+    </aside>
+</div>
+    
+    <script src="app.js"></script>
+</body>
+</html> 
