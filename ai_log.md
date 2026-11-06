@@ -12,6 +12,8 @@
 * **Ne Öğrendim:** Bir projeye doğrudan kod yazarak başlamak yerine, problemi net bir şekilde tanımlamanın ve projenin sınırlarını baştan belirlemenin (sürdürülebilirlik açısından) ne kadar kritik olduğunu anladım.
 
 
+**TARİH:** 05.10.2026
+
 
 * **AI'a Sorduğum:** sitemizin arayüzünü oluşturmak için sana atmış olduğum prototipleri incelemeni istiyorum senden ve sonrasında bunları HTML CSS JAVASCRİPT ile bir adet arayüz oluştumanı istiyorum hatalara göz gezdir kodları  kemndim düzenleyeceğim sonrasında 
   
